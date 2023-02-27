@@ -71,7 +71,8 @@ while ($row = mysqli_fetch_assoc($result)){
     <?php       // change floor numbers
     while( $parking <= $row['parkingNo'] ) {
         if($row['status'] == 'empty') {
-            echo '<div class="container-p" style="display: flex; width: 50%">
+            echo '
+        <div class="container-p" style="display: flex; width: 50%">
             <div style="border: 1px solid black; margin: 20px;" class="container">
                 <img src="./Parking.jpg" class="image" style=" width:10%">
                 <div class="middle">
@@ -85,6 +86,8 @@ while ($row = mysqli_fetch_assoc($result)){
       }
 
     }
+
+
 
     ?>
 
